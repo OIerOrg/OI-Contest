@@ -1,19 +1,17 @@
+// 100
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 10;
 int cnt[N], Cnt, Max;
-signed main()
-{
+signed main() {
     freopen("T3.in", "r", stdin);
     freopen("T3.out", "w", stdout);
     int n, d;
     scanf("%d%d", &n, &d);
-    for (int i = 1; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++) {
         int x;
         scanf("%d", &x);
-        if (x == 1)
-        {
+        if (x == 1) {
             cnt[i % d]++, Cnt++;
         }
     }
