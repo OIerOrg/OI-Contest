@@ -4,7 +4,7 @@ using namespace std;
 const int N = 2e6 + 10;
 const int LG = 24;
 int arr[N], Last[N], Next[N], ST[N][LG];
-long long ans;
+unsigned long long ans;
 int query(int l, int r)
 {
 	int k = log2(r - l + 1);
@@ -48,9 +48,9 @@ int main()
 	{	
 		int L = (Last[i] == -1 ? 1 : Last[i] + 1);
 		int R = (Next[i] == -1 ? n : Next[i] - 1);
-		ans = max(ans, 1LL * query(L, R) * arr[i] * (R - L + 1));
+		ans = max(ans, 1ULL * query(L, R) * arr[i] * (R - L + 1));
 	}
-	printf("%lld\n", ans);
+	printf("%llu\n", ans);
 	fprintf(stderr, "Time used: %.2lf s\n", (double)clock() / CLOCKS_PER_SEC);
 	return 0;
 }
