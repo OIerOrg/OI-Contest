@@ -18,6 +18,8 @@ long long qpow(long long base, long long exponent, long long mod) {
 }
 
 int main() {
+    freopen("T1.in", "r", stdin);
+    freopen("T1.out", "w", stdout);
     int n;
     cin >> n;
 
