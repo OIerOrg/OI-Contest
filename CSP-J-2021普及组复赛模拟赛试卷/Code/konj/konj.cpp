@@ -45,6 +45,7 @@ int main() {
     }
     cin >> TX >> TY;
     vector<int> ve;
+
     for (int i = 1; i <= n; i++) {
         int X1 = line[i].A, Y1 = line[i].B, X2 = line[i].C, Y2 = line[i].D;
         if (X1 == X2) {
