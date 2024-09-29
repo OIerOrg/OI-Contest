@@ -3,7 +3,7 @@ clear
 
 # 开始编译
 echo "开始编译"
-g++ T1.cpp -o T1
+g++ T2.cpp -o T2
 
 # 检查编译是否成功
 if [ $? -ne 0 ]; then
@@ -26,7 +26,7 @@ if [ "$output_file" == "" ]; then
 fi
 
 # 运行程序
-./T1 <"$input_file" >"$output_file"
+./T2 <"$input_file" >"$output_file"
 
 # 提问是否需要比较答案
 echo "你是否需要比较答案 (Y/N): "
