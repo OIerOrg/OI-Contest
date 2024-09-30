@@ -2,12 +2,11 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-struct Tree{
+struct Tree {
     const int N = (1e5 + 10) << 2;
-    int l[N], r[N];
+    int ls[N], rs[N], cnt[N], l[N], r[N];
 
-}
-int main() {
-    
+} int main() {
+
     return 0;
 }
