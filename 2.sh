@@ -10,6 +10,7 @@ if [[ -z "$OUTPUT" ]]; then
     exit 1
 fi
 
+
 echo "找到备份文件: $OUTPUT"  # 输出 OUTPUT 的值
 split -b 10M $OUTPUT "./backup/backup-part"
 rm $OUTPUT
