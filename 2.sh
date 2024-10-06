@@ -1,7 +1,7 @@
-# LANG=zh . <(curl https://hydro.ac/setup.sh)
-# cpolar service start
-# rm -rf './backup'
-# mkdir -p './backup'
+LANG=zh . <(curl https://hydro.ac/setup.sh)
+cpolar service start
+rm -rf './backup'
+mkdir -p './backup'
 hydrooj backup
 OUTPUT=$(ls -t | grep '^backup-' | head -n 1)
 
