@@ -2,7 +2,7 @@
 # cpolar service start
 # rm -rf './backup'
 # mkdir -p './backup'
-# hydrooj backup
+hydrooj backup
 OUTPUT=$(ls -t | grep '^backup-' | head -n 1)
 
 if [[ -z "$OUTPUT" ]]; then
